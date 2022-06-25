@@ -3,11 +3,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import axios from 'axios';
-export default function ListStreet() {
+export default function Employee() {
   const [streets, setStreet] = React.useState([]);
 
   const fetchData = async () => {
-    await axios.get("https://summer-boot.herokuapp.com/api/streets").then(res => {
+    await axios.get("https://summer-boot.herokuapp.com/api/employees").then(res => {
       if (res.status == 200) {
         setStreet(res.data);
         console.log(res.data)
@@ -29,7 +29,7 @@ export default function ListStreet() {
               <h6 className='card-title'>List Streets</h6>
             </div>
             <div className='card-body'>
-              <Link href={"/create"}>
+              <Link href={"/create-employee"}>
                 <a >
                   create a street
                 </a>
@@ -39,10 +39,7 @@ export default function ListStreet() {
                   <tr>
                     <th scope="col">#ID</th>
                     <th scope="col">Name</th>
-                    <th scope="col">District</th>
-                    <th scope="col">Founding</th>
-                    <th scope="col">Street Status</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Wage</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -53,10 +50,7 @@ export default function ListStreet() {
                           <tr key={index}>
                             <td>{item.id}</td>
                             <td>{item.name}</td>
-                            <td>{item.district}</td>
-                            <td>{item.founding}</td>
-                            <td>{item.streetStatus}</td>
-                            <td>{item.status}</td>
+                            <td>{item.wage}</td>
                            
                           </tr>
                         </>

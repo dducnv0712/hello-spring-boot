@@ -22,8 +22,21 @@ export default function Home() {
 
   return (
     <>
-    <div className='container h-screen'>
-    </div>
+      <div style={{ height: "100vh" }} className='container d-flex m-auto  justify-content-center  align-items-center'>
+        <div>
+          <Link href={"/list-street"}>
+            <a style={{width:"300px"}} className='btn btn-primary  mb-3 btn-lg  py-1'>
+              Streets
+            </a>
+          </Link>
+          <br/>
+          <Link href={"/employee"}>
+            <a style={{width:"300px"}} className='btn btn-primary btn-lg  py-1'>
+              Employees
+            </a>
+          </Link>
+        </div>
+      </div>
     </>
   )
 }
