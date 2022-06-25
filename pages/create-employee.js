@@ -51,7 +51,7 @@ const CreateEmployee = () => {
                 <div className='col-6 m-auto'>
                     <div className='card  mt-5'>
                         <div className='card-header'>
-                            <h6 className='card-title'>Create</h6>
+                            <h6 className='card-title'>Create Employee</h6>
                         </div>
                         <div className='card-body'>
                             <Link href={"/employee"}>

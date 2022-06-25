@@ -26,12 +26,12 @@ export default function Employee() {
         <div className='col-7 m-auto mt-5'>
           <div className='card'>
             <div className='card-header'>
-              <h6 className='card-title'>List Streets</h6>
+              <h6 className='card-title'>List Employees</h6>
             </div>
             <div className='card-body'>
               <Link href={"/create-employee"}>
                 <a >
-                  create a street
+                  create a employee
                 </a>
               </Link>
               <table className="table table-bordered">
