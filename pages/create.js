@@ -6,9 +6,7 @@ const Create = () => {
         <>
             <div className='row'>
                 <div className='col-6 m-auto'>
-
                     <div className='card  mt-5'>
-
                         <div className='card-header'>
                             <h6 className='card-title'>Create</h6>
                         </div>
@@ -20,12 +18,12 @@ const Create = () => {
                             </Link>
                             <div className='row'>
                                 <div className="mb-3">
-                                    <label for="exampleInputEmail1" className="form-label">Street Name</label>
+                                    <label httpFor="exampleInputEmail1" className="form-label">Street Name</label>
                                     <input type="text" className="form-control" />
                                 </div>
                                 <div className='col-8 mb-3'>
-                                    <label for="exampleFormControlInput1" class="form-label">District</label>
-                                    <select className="form-select" aria-label="Default select example">
+                                    <label httpFor="exampleFormControlInput1" className="form-label">District</label>
+                                    <select className="form-select" ariaLabel="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -33,12 +31,12 @@ const Create = () => {
                                     </select>
                                 </div>
                                 <div className='col-4 mb-3'>
-                                    <label for="exampleFormControlInput1" class="form-label">Founding</label>
-                                    <input type="date" class="form-control" />
+                                    <label httpFor="exampleFormControlInput1" className="form-label">Founding</label>
+                                    <input type="date" className="form-control" />
                                 </div>
                                 <div className='col-6 mb-3'>
-                                    <label for="exampleFormControlInput1" class="form-label">Street Status</label>
-                                    <select className="form-select" aria-label="Default select example">
+                                    <label httphttpFor="exampleFormControlInput1" className="form-label">Street Status</label>
+                                    <select className="form-select" ariaLabel="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -46,8 +44,8 @@ const Create = () => {
                                     </select>
                                 </div>
                                 <div className='col-6 mb-3'>
-                                    <label for="exampleFormControlInput1" class="form-label">Status</label>
-                                    <select className="form-select" aria-label="Default select example">
+                                    <label httpFor="exampleFormControlInput1" className="form-label">Status</label>
+                                    <select className="form-select" ariaLabel="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
